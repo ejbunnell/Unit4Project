@@ -26,6 +26,13 @@ let q3 = document.querySelector("#q3");
 
 let resultDiv = document.querySelector("#resultDiv");
 let result = document.querySelector("#result");
+let resultPic = document.querySelector("#resultPic");
+
+let count = 0;
+let counter = document.querySelector("#counter")
+let retake = document.querySelector("#retake");
+
+
 
 function transparentQ1() {
     q1a1.style.backgroundColor = "#333333CC";
@@ -56,7 +63,7 @@ function q1Buttons(button) {
     }
 }
 
-q1a1.addEventListener("click", () => {scout += 1; pit += 2;  q1Buttons(q1a1); });
+q1a1.addEventListener("click", () => {scout += 1; pit += 2; driver -= 2;  q1Buttons(q1a1); });
 q1a2.addEventListener("click", () => {media += 1; tech += 1; q1Buttons(q1a2); });
 q1a3.addEventListener("click", () => {pit += 1; driver += 1; q1Buttons(q1a3); });
 q1a4.addEventListener("click", () => {driver += 2;           q1Buttons(q1a4); });
@@ -132,6 +139,8 @@ q3a3.addEventListener("click", () => {media += 3;          q3Buttons(q3a3);});
 q3a4.addEventListener("click", () => {tech += 1; pit += 1; q3Buttons(q3a4);});
 
 
+
+
 function results() {
     questions.style.display = "none";
     resultDiv.style.display = "block";
@@ -145,14 +154,15 @@ function results() {
             break;
         }   
     }
+    const resultPics = ["driver.png", "pit.png", "tech.png", "scout.png", "media.jpg"];
+    resultPic.src = resultPics[i];
     result.textContent = "You are " + results[i];
     count++;
     counter.textContent = "Times completed: " + count;
 }
 
-let count = 0;
-let counter = document.querySelector("#counter")
-let retake = document.querySelector("#retake");
+
+
 retake.addEventListener("click", () => {
     driver = 0;
     tech = 0;

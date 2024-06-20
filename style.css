@@ -103,3 +103,7 @@ body {
     background-color: #222;
     font-size: 1em;
 }
+
+#resultPic {
+    width: 50%;
+}
