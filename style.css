@@ -1,0 +1,105 @@
+/* General body styling */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+
+.answers button {
+    background-color:#333333;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    border-radius: 20%;
+    transition: background-color 0.3s, font-size 0.1s;
+}
+
+.answers button:hover {
+    background-color: #222;
+    font-size: 2.1em;
+}
+
+#q2, #q3 {
+    display: none;
+}
+
+/* Title section styling */
+.title h1 {
+    text-align: center;
+    color: #333;
+}
+
+.title p {
+    text-align: center;
+}
+
+/* Questions section styling */
+.questions {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questions h3 {
+    color: #666;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.questions img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Result section styling */
+#resultDiv {
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.8em;
+    display: none;
+}
+
+#retake {
+    background-color:#333333;
+    width: 150px;
+    height: 50px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-family: sans-serif;
+    border-radius: 20px;
+    transition: background-color 0.3s, font-size 0.1s;
+    margin: auto;
+}
+
+#retake:hover {
+    background-color: #222;
+    font-size: 1em;
+}
