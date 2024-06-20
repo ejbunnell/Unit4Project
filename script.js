@@ -155,7 +155,7 @@ function results() {
         }   
     }
     const resultPics = ["driver.png", "pit.png", "tech.png", "scout.png", "media.jpg"];
-    resultPic.src = resultPics[i];
+    resultPic.src = "images/" + resultPics[i];
     result.textContent = "You are " + results[i];
     count++;
     counter.textContent = "Times completed: " + count;
